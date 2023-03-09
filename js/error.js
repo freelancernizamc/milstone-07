@@ -49,3 +49,54 @@ const add2 = (n1, n2) => n1 + n2;
 // 40-5 Fix reference and type errors from shopping list
 // Video 40-6 Money Master reference and query selector error ( part 1)
 
+setTimeout(function() {
+    console.log("Message after 3.5 seconds");
+  }, 3500);
+  
+
+//   Event loop
+console.log("Start");
+
+setTimeout(function() {
+  console.log("Timeout complete");
+}, 1000);
+
+console.log("End");
+
+// call back
+function multiply(x, y) {
+    return x * y;
+  }
+  
+  function square(x) {
+    return multiply(x, x);
+  }
+  
+  function printSquare(x) {
+    const result = square(x);
+    console.log(result);
+  }
+  
+  printSquare(5);
+  setTimeout(function() {
+    console.log("Async callback");
+  }, 0);
+  
+//   try catch finally 
+
+function divide(x, y) {
+    try {
+      if (y === 0) {
+        throw new Error("Division by zero");
+      }
+      return x / y;
+    } catch (error) {
+      console.log(error.message);
+    } finally {
+      console.log("Division complete");
+    }
+  }
+  
+  console.log(divide(10, 0));
+  console.log(divide(10, 2));
+  
