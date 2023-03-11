@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone 07: Module 42</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black container-fluid">
+            <div class="d-flex navbar-brand bg-primary text-warning rounded-pill bg-dark">
+                <img class="img-fluid" src="images/nizam2.png" width="60" height="24">
+                <h4>Milstone-07<br>Module-42</h4>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold ">
+                <li class="nav-item"><a class="nav-link text-white hover:text-warning" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod39.html">Module-39</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod40.html">Module-40</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod41.html">Module-41</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod43.html">Module-43</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod44.html">Module-44</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod45.html">Module-45</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Milstone
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://freelancernizamc.github.io/milstone-01/">Milstone-01</a></li>
+                      <li><a class="dropdown-item" href="https://milstone-2.netlify.app/">Milstone-02</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://freelancernizamc.github.io/milstone-03/index.html">Milstone-03</a></li>
+                      <li><a class="dropdown-item" href="https://freelancernizamc.github.io/milstone-04/">Milstone-04</a></li>
+                      <li><a class="dropdown-item" href="https://milstone-05.netlify.app/">Milstone-05</a></li>
+                      <li><a class="dropdown-item" href="https://freelancernizamc.github.io/milstone-06/">Milstone-06</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <button class="btn bg-warning text-dark me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Modal</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Assalamualaikum!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 This page made by Bootstrap.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Change</button>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <div class="d-flex justify-content-around align-items-center bg-dark text-white">
+            <div>
+                <h1>Assalamualaikum!</h1>
+                <h1 class="display-1 fw-bold text-warning">I am Nizam</h1>
+                <h4>Student of Batch-7</h4>
+            </div>
+            <div>
+                <img class="rounded-circle" src="images/nizam2.png" alt="">
+            </div>
+        </div>
+        <div class="text-warning bg-black">
+          <div>
+            <title>Digital Watch</title>
+          </div>
+          <div>
+            <h1 id="clock"></h1>
+          </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="display-1 fw-bold text-center bg-black text-warning">Module-42 Practice</h1>
+        <section>
+            <h2 class="text-center text-primary fs-3">Video 42-1 How Browser works, DOM tree, Render Tree</h2>
+            <p> DOM tree and Rander Tree</p>
+            <h2 class="text-center text-danger fs-3">Video 42-2 BOM vs DOM, Browser API</h2>
+            <h2 class="text-center text-success fs-3">Video 42-3 Browser alert, confirm, prompt</h2>
+            <div class="text-center">
+            <button onclick="showAlert()" class="btn btn-primary text-center">Alert Me</button>
+            <button onclick="landMoney()" class="btn btn-primary text-center">Taka Dhar Debi</button>
+            <button onclick="getInfo()">Name bol?</button>
+        </div>
+            <h2 class="text-center text-success fs-3">Video 42-4 Location, URL parts, History api</h2>
+            <h2 class="text-center text-info fs-3">Video 42-5 Cookies, dev tool application tab, get cookie value</h2>
+            <h2 class="text-center text-danger fs-3">Video 42-6 Set and read Simple value from local storage</h2>
+            <h2 class="text-center text-primary fs-3">Video 42-7 How to set and get objects to local storage</h2>
+            <h2 class="text-center text-primary fs-3">Video 42-8 A simple shopping cart to add product and quantity</h2>
+            <div class="text-center">
+          <button onclick="setAge()">Set Age</button>
+          <h2>Shopping Cart</h2>
+          <input id="product-name" type="text" placeholder="product">
+          <input id="product-quantity" type="text" placeholder="Quantity">
+          <button onclick="addProduct()" class="btn btn-success">Add Product</button>
+          <ul id="product-container">
+
+          </ul>
+        </div>
+          <h2 class="text-center text-primary fs-3">Video 42-9 (advanced) Local Storage Interactions for a shopping Cart</h2>
+          <h2 class="text-center text-danger fs-3">Video 42-10 Module Summary</h2>
+
+          </section>
+          <section>
+            <h1 class="display-1 fw-bold text-center bg-black text-warning">QUIZ</h1>
+            <h2 class="text-center text-primary fs-3">Q1: location===window.location is this true or false?<br>
+            Ans: true</h2>
+            <h2 class="text-center text-danger fs-3">Q2: Why is prompt() used?<br>
+            Ans: to take input from users</h2>
+            <h2 class="text-center text-success fs-3">Q3: Full form of BOM in Javascript is---<br>
+            Ans: Browser Object Model</h2>
+            <h2 class="text-center text-info fs-3">Q4: Which tab of the chrome browser will show you the cookies stored?<br>
+            Ans: Application</h2>
+            <h2 class="text-center text-info fs-3">Q5: If you want to visit "https://www.google.com/" from your site on a button click, which one should you use?<br>
+            Ans: location.assign;</h2>
+            <h2 class="text-center text-info fs-3">Q6: Which storage information will not remain after you close the browser?<br>
+            Ans: session storage</h2>
+            <h2 class="text-center text-info fs-3">Q7: Which method will you use to store items in local storage?<br>
+            Ans: localStorage.setItem()</h2>
+            <h2 class="text-center text-info fs-3">Q8: Which one is true?<br>
+            Ans: cookies are sent to the server</h2>
+            <h2 class="text-center text-info fs-3">Q9: Which one will return you all the cookies in a string?<br>
+            Ans: document.cookie</h2>
+            <h1 class="display-1 fw-bold text-center bg-black text-warning">The End</h1>
+          </section>
+    </main>
+  
+
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/mod42.js"></script>
+</body>
+</html>
