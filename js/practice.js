@@ -15,7 +15,7 @@ const seeWebsite = () =>{
     const result = confirm('Do you want to see the location of this website?')
     console.log(result);
     if(result === true){
-        alert("https://www.nizam2020.com")
+        window.location = "https://www.nizam2020.com";
     }
     else{
         console.log('Ok Good buy')
