@@ -51,6 +51,55 @@
             <h2 class="text-3xl text-center text-blue-500 font-bold">Video 44-3 Array methods map filter find forEach</h2>
             <h2 class="text-3xl text-center text-pink-500 font-bold">Video 44-4 Array and object Destructuring</h2>
             <h2 class="text-3xl text-center text-green-500 font-bold">Video 44-5 JSON, Fetch, keys, values, array add or remove using dots.</h2>
+            <h2 class="text-3xl text-center text-rose-500 font-bold">Video 44-6 (advanced) truthy, false Ternary operator, shortcut and or</h2>
+            <h2 class="text-3xl text-center text-blue-500 font-bold">Video 44-7 Explore Localstorage and session storage with JSON</h2>
+            <div class="text Center">
+                <h1 class="text-3xl">Local Storage and Session Storage</h1>
+                <input type="text" class="p-3" placeholder="storage id" id="storage-id">
+                <input type="text" class="p-3" placeholder="storage value" id="storage-value"><br>
+                <button onclick="addToLocalStorage()" class="btn btn-success">Add to Localstorage</button>
+
+            </div>
+            <h2 class="text-3xl text-center text-blue-500 font-bold">Video 44-8 dot vs bracket notation</h2>
+            <h2 class="text-3xl text-center text-pink-500 font-bold">Video 44-9 Module summary</h2>
+            <h2 class="text-3xl text-center text-green-500 font-bold">Video 44-10 (optional) React JS Installation troubleshooting</h2>
+
+        </section><br>
+        <section>
+            <h1 class="text-5xl text-center text-yellow-300 bg-black">QUIZ</h1>
+            <h2 class="text-3xl text-center text-indigo-900 font-bold">Q1: Which one is true about map and forEach when called on an empty array?<br>
+            Ans: Map returns an array but forEach returns undefined</h2>
+            <h2 class="text-3xl text-center text-indigo-900 font-bold">Q2: Which one is a falsy value here?<br>
+            Ans: if(0)</h2>
+            <h2 class="text-3xl text-center text-indigo-900 font-bold">Q3: const name = 'Hero';const age = 34;
+                const person = {name, age}; console.log(person);
+                What will be the output?(Try it out)<br>
+            Ans: {name: 'Hero',age:34}</h2>
+            <h2 class="text-3xl text-center text-pink-500 font-bold">Q4: const person = { name : ”Babe” }
+                Which one is not the correct syntax for accessing the object property?  <br>
+            Ans: person(name)</h2>
+            <h2 class="text-3xl text-center text-blue-500 font-bold">Q5: const {name, country, age} = person;
+                What does the above code snippet indicate?  <br>
+            Ans: Destructuring of an object.</h2>
+            <h2 class="text-3xl text-center text-rose-500 font-bold">Q6: What is the value of ratName?
+
+                const adventurer = { name: 'Alice',cat: {name: 'Lucy'} };
+                const ratName = adventurer?.rat?.name;  <br>
+            Ans: undefined</h2>
+            <h2 class="text-3xl text-center text-green-500 font-bold">Q7: Which method converts JSON strings to javascript objects? <br>
+            Ans: JSON.parse()</h2>
+            <h2 class="text-3xl text-center text-pink-500 font-bold">Q8: let person =null;
+                console.log(person ? person : "person is null");
+                What will be the output of the above code? <br>
+            Ans: person is null</h2>
+            <h2 class="text-3xl text-center text-blue-500 font-bold">Q9: lWhich one is not true for the filter (array method filter)? <br>
+            Ans: Return undefined when no elements pass the test</h2>
+            <h2 class="text-3xl text-center text-rose-500 font-bold">Q10: 
+                const obj = {a:1};
+                console.log(Object.keys(obj).length===0);
+                What will be the output? <br>
+            Ans: false</h2>
+            <h1 class="text-5xl text-center text-yellow-300 bg-black">The End</h1>
         </section>
 
     </main>
@@ -76,5 +125,6 @@ function digitalClock() {
   
   digitalClock();
     </script>
+    <script src="js/mod44.js"></script>
 </body>
 </html>    

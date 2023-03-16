@@ -186,3 +186,128 @@ console.log(newProducts);
 // remove phone means create a new array without the phone
 const remaining = products.filter(p => p.name !== 'phone');
 console.log(remaining);
+
+// Video 44-6 (advanced) truthy, false Ternary operator, shortcut and or
+
+// falsy= '', 0, false, null, undefine
+// truthy= 'almas', 5, true, {}, []
+let myVar = 5;
+// check truthy
+if(myVar){
+
+    myVar = myVar * 100;
+}
+else{
+    myVar = 0;
+}
+let myMoney = 50;
+// you check negative or falsy anything
+if(!myMoney){
+
+}
+
+const money = 800;
+let food;
+if(money > 100){
+    food = 'biriyani';
+}
+else{
+    food = 'cha biscuit';
+}
+// ternary
+let food1 = money > 100 ? 'biriyani' : 'cha biscuit';
+console.log(food1);
+
+let drink = (money > 100 && myVar > 100) ? 'coke' : 'filter water';
+console.log(drink);
+// number to string conversion
+ const num1 = 52;
+ console.log(num1);
+ const numStr = num1 + '';
+//  string to number
+const input = '560';
+const inputNum = +input;
+console.log(inputNum);
+
+// const isActive = true;
+const isActive = false;
+const showUser = () => console.log('display User');
+const hideUser = () => console.log('hide User');
+
+isActive ? showUser() : hideUser();
+// use && if the left side is true then right side will be executed
+isActive && showUser();
+// use || if the left side is false then right side will be executed
+isActive || hideUser();
+// toggle boolean
+// isActive = !isActive;
+
+// Video 44-7 Explore Localstorage and session storage with JSON
+
+// localStorage.setItem('userId', 87952214);
+const addToLocalStorage = () => {
+    const idInput = document.getElementById('storage-id');
+    const id = idInput.value;
+    const valueInput = document.getElementById('storage-value');
+    const value = valueInput.value;
+    // 
+    if (id && value){
+
+        localStorage.setItem(id, value);
+    }
+    idInput.value = '';
+    valueInput.value = '';
+}
+
+localStorage.setItem('friend', [45, 78, 78]);
+localStorage.setItem('friend', JSON.stringify([45, 78, 78]));
+// const pen = {price: 10, color: 'black'};
+// localStorage.setItem('pen', JSON.stringify(pen));
+const pen = {price: 50, color: 'red'}
+// const penObj = JSON.parse(pen);
+localStorage.setItem('pen', JSON.stringify(pen));
+pen.price = 70;
+localStorage.setItem('pen', JSON.stringify(pen));
+
+// Video 44-8 dot vs bracket notation
+
+const person = {
+    name: 'Lal Nil Holud mia',
+    profession: 'Traffic surgeon',
+    age: 39,
+    25: 'Summer',
+    'son-name': 'sunny',
+    address: 'Shahabag'
+}
+// dot notation
+const prof1 = person.profession;
+// bracket notation
+const prof2 = person['profession'];
+console.log(prof2);
+const pName = 'profession';
+const prof3 = person[pName];
+console.log(prof3);
+
+const season = person[25];
+console.log(season);
+const son = person['son-name'];
+console.log(son);
+
+// Video 44-9 Module summary
+const x =50;
+const y = 100;
+const obj = {
+    x: x,
+    y: y
+};
+// Shortcut
+const obj1 = {x, y};
+console.log(obj1);
+const name2 = 'Solimullah';
+const area = 'Dhaka';
+const nobab = {
+    name2 : name2,
+    area: area
+}
+const nobab2 = {name2, area};
+console.log(nobab2);
