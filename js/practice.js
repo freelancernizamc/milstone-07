@@ -84,3 +84,15 @@ let result = num.find(function(currentValue){
     return currentValue > 4;
 });
 console.log(result);
+
+// findindex
+let result2 = num.findIndex((currentValue, index, arr) =>{
+    return currentValue >5;
+});
+console.log(result2);
+let result4 = num.filter((currentValue, index,arr)=> {
+    return currentValue >5;
+})
+console.log(result4);
+let result5 = num.slice(-3, 5);
+console.log(result5);
