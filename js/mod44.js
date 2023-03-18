@@ -19,12 +19,12 @@
 const numbers = [89, 35, 98, 12];
 numbers[0] = 56;
 // 4. for loop
-for (let i = 0; i<numbers.length; i++){
+for (let i = 0; i < numbers.length; i++) {
     const number = numbers[1];
     console.log(number);
 }
 // 5. function
-function multiply(num1, num2){
+function multiply(num1, num2) {
     const result = num1 * num2;
     return result;
 }
@@ -53,7 +53,7 @@ console.log(about);
 const getFiftyFive = () => 55;
 const addSixtyFive = num => num + 65;
 const isEven = x => x % 2 == 0;
-const addThree = (x, y, z) => x+ y+ z;
+const addThree = (x, y, z) => x + y + z;
 const doMath = (num1, num2) => {
     const sum = num1 + num2;
     return sum;
@@ -75,11 +75,11 @@ console.log(currentNumbers);
 // Video 44-3 Array methods map filter find forEach
 
 const products = [
-    {name: 'laptop', price: 32000, brand: 'lenovo', color: 'silver'},
-    {name: 'phone', price: 7000, brand: 'iphone', color: 'golden'},
-    {name: 'watch', price: 3000, brand: 'casio', color: 'yellow'},
-    {name: 'sunglass', price: 300, brand: 'ribon', color: 'black'},
-    {name: 'laptop', price: 9000, brand: 'canon', color: 'gray'},
+    { name: 'laptop', price: 32000, brand: 'lenovo', color: 'silver' },
+    { name: 'phone', price: 7000, brand: 'iphone', color: 'golden' },
+    { name: 'watch', price: 3000, brand: 'casio', color: 'yellow' },
+    { name: 'sunglass', price: 300, brand: 'ribon', color: 'black' },
+    { name: 'laptop', price: 9000, brand: 'canon', color: 'gray' },
 ];
 
 const brands = products.map(product => product.brand);
@@ -114,7 +114,7 @@ const numbers2 = [42, 65];
 // const [x, y] = numbers2;
 // console.log(x, y);
 
-function boxify (num1, num2){
+function boxify(num1, num2) {
     const nums = [num1, num2];
     return nums;
 }
@@ -124,7 +124,7 @@ console.log(boxify(90, 34));
 const [firstMovie, secondMovie] = student.movies;
 
 // object destructring
-const {name, age} = { id: 12, name: 'alu', salary: 34000, age: 14}
+const { name, age } = { id: 12, name: 'alu', salary: 34000, age: 14 }
 const employee = {
     ide: 'Vs Code',
     designation: 'developer',
@@ -140,12 +140,12 @@ const employee = {
             price: 500,
             brand: 'garmin'
         }
-    } 
+    }
 }
 
-const {machine, ide} = employee;
-const {weight, address} = employee.specification;
-const {brand} = employee?.specification?.watch;
+const { machine, ide } = employee;
+const { weight, address } = employee.specification;
+const { brand } = employee?.specification?.watch;
 console.log(brand);
 
 // Video 44-5 JSON, Fetch, keys, values, array add or remove using dots.
@@ -170,14 +170,14 @@ console.log(keys);
 // for
 const numbers3 = [23, 54, 67, 87, 23, 78];
 numbers3.forEach(num => console.log(num));
-const result = numbers3.map(num => num *2);
+const result = numbers3.map(num => num * 2);
 console.log(result);
 
 // for of on array like object
 // loop on an object using for in
 // add or remove from an array
 
-const newProduct = {name: 'webcam', price: 700, brand: 'lal'};
+const newProduct = { name: 'webcam', price: 700, brand: 'lal' };
 // copy products array and add newProduct
 const newProducts = [...products, newProduct];
 console.log(newProducts);
@@ -193,25 +193,25 @@ console.log(remaining);
 // truthy= 'almas', 5, true, {}, []
 let myVar = 5;
 // check truthy
-if(myVar){
+if (myVar) {
 
     myVar = myVar * 100;
 }
-else{
+else {
     myVar = 0;
 }
 let myMoney = 50;
 // you check negative or falsy anything
-if(!myMoney){
+if (!myMoney) {
 
 }
 
 const money = 800;
 let food;
-if(money > 100){
+if (money > 100) {
     food = 'biriyani';
 }
-else{
+else {
     food = 'cha biscuit';
 }
 // ternary
@@ -221,9 +221,9 @@ console.log(food1);
 let drink = (money > 100 && myVar > 100) ? 'coke' : 'filter water';
 console.log(drink);
 // number to string conversion
- const num1 = 52;
- console.log(num1);
- const numStr = num1 + '';
+const num1 = 52;
+console.log(num1);
+const numStr = num1 + '';
 //  string to number
 const input = '560';
 const inputNum = +input;
@@ -251,7 +251,7 @@ const addToLocalStorage = () => {
     const valueInput = document.getElementById('storage-value');
     const value = valueInput.value;
     // 
-    if (id && value){
+    if (id && value) {
 
         localStorage.setItem(id, value);
     }
@@ -263,7 +263,7 @@ localStorage.setItem('friend', [45, 78, 78]);
 localStorage.setItem('friend', JSON.stringify([45, 78, 78]));
 // const pen = {price: 10, color: 'black'};
 // localStorage.setItem('pen', JSON.stringify(pen));
-const pen = {price: 50, color: 'red'}
+const pen = { price: 50, color: 'red' }
 // const penObj = JSON.parse(pen);
 localStorage.setItem('pen', JSON.stringify(pen));
 pen.price = 70;
@@ -294,22 +294,22 @@ const son = person['son-name'];
 console.log(son);
 
 // Video 44-9 Module summary
-const x =50;
+const x = 50;
 const y = 100;
 const obj = {
     x: x,
     y: y
 };
 // Shortcut
-const obj1 = {x, y};
+const obj1 = { x, y };
 console.log(obj1);
 const name2 = 'Solimullah';
 const area = 'Dhaka';
 const nobab = {
-    name2 : name2,
+    name2: name2,
     area: area
 }
-const nobab2 = {name2, area};
+const nobab2 = { name2, area };
 console.log(nobab2);
 
 // slider 
@@ -317,17 +317,18 @@ console.log(nobab2);
 const images = [
     'images/nizam.png',
     'images/nizam2.png',
+    'images/Nizam bd.jpg',
     'images/md-nizamuddin (1).jpeg',
-    ]
-    let imgIndex = 0;
-    const imgE1 = document.getElementById('banner-img');
-    setInterval(() =>{
-    if(imgIndex === images.length){
-    imgIndex =0;
+]
+let imgIndex = 0;
+const imgE1 = document.getElementById('banner-img');
+setInterval(() => {
+    if (imgIndex === images.length) {
+        imgIndex = 0;
     }
     const imgUrl = images[imgIndex];
     console.log(imgIndex, imgUrl);
-    
+
     imgE1.setAttribute('src', imgUrl)
     imgIndex++;
-    } , 1000)
+}, 1000)
