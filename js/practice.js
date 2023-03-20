@@ -28,15 +28,15 @@
 //     let href ="https://www.nizam2020.com";
 //     console.log(window.location.href);
 //   }
-  
+
 // filter:
 
 const numbers = [1, 8, 2, 10, 2];
-const twos = numbers.filter((num) => num ===2);
+const twos = numbers.filter((num) => num === 2);
 console.log(twos);
 const doubleDigits = numbers.filter((num) => num > 9);
 console.log(doubleDigits);
-const hundreds = numbers.filter((num) => num>100);
+const hundreds = numbers.filter((num) => num > 100);
 console.log(hundreds);
 
 // includes
@@ -52,7 +52,7 @@ console.log(fruit);
 const pets = ["cat", "dog", "bird", "dog"];
 const dog = pets.find(pet => pet === "dog");
 console.log(dog);
-const fish = pets.find(pet => pet ==="fish");
+const fish = pets.find(pet => pet === "fish");
 console.log(fish);
 
 // indexOf
@@ -69,8 +69,8 @@ const getFifty = () => 50;
 console.log(getFifty());
 const isEven = x => x % 2 == 0;
 console.log(isEven(5));
-const student = {name: 'Nizam, age: 40'};
-const {name, age} = student;
+const student = { name: 'Nizam, age: 40' };
+const { name, age } = student;
 
 // ternary operator
 
@@ -80,19 +80,21 @@ console.log(type);
 
 // find
 let num = [1, 2, 3, , 5, 6, 7];
-let result = num.find(function(currentValue){
+let result = num.find(function (currentValue) {
     return currentValue > 4;
 });
 console.log(result);
 
 // findindex
-let result2 = num.findIndex((currentValue, index, arr) =>{
-    return currentValue >5;
+let result2 = num.findIndex((currentValue, index, arr) => {
+    return currentValue > 5;
 });
 console.log(result2);
-let result4 = num.filter((currentValue, index,arr)=> {
-    return currentValue >5;
+let result4 = num.filter((currentValue, index, arr) => {
+    return currentValue > 5;
 })
 console.log(result4);
 let result5 = num.slice(-3, 5);
 console.log(result5);
+
+// conceptual session:
